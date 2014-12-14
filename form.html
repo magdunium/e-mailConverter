@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>Formularz</title>
+</head>
+<body>
+
+Paste e-mails as below: 
+<br>mail@yahoo.com,password
+<br><br>
+
+	<form name = "mailForm">
+		<textarea name = "textarea" cols = "100" rows = "15"></textarea>
+		<br><INPUT TYPE="button" NAME="Button" Value="Submit" onClick="myFunction()">	
+	</form>
+
+<p id = "output"></p>
+
+<script type="text/javascript">	
+
+	function myFunction() {
+		var inputString = mailForm.textarea.value;
+        var outputString = inputString.replace(",", ":"); 
+    	document.getElementById("output").innerHTML = outputString;
+	}
+</script>
+</body>
+</html>
