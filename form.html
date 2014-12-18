@@ -19,7 +19,7 @@ Paste e-mails as below:
 
 	function myFunction() {
 		var inputString = mailForm.textarea.value;
-        var outputString = inputString.replace(",", ":"); 
+        var outputString = inputString.replace(/,/g, ":"); 
     	document.getElementById("output").innerHTML = "<pre>" + outputString + "\n";
 	}
 </script>
